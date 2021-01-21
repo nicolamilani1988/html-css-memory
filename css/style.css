@@ -1,3 +1,4 @@
+/* regole generali */
 *{
   box-sizing: border-box;
   margin:0;
@@ -6,5 +7,49 @@
 
 body{
   background-color: #ADD8E6;
+}
 
+/* regole titolo */
+h1{
+  color:white;
+  font-family: 'Nerko One', cursive;
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 1px 0px #170202;
+}
+
+/* regole carte */
+.row{
+  background-color: green;
+  width: 70%;
+  margin:auto;
+  position:relative;
+}
+
+.card{
+  width: 20%;
+  background-color: red;
+  height: 100px;
+  padding: 10px 10px 10px;
+}
+
+.card:last-child{
+  position:absolute;
+  top: 0;
+  right:0;
+  background-color: grey;
+}
+
+.row .card:nth-child(2){
+  position:absolute;
+  top: 0;
+  left:25%;
+  background-color: black;
+}
+
+.row .card:nth-child(3){
+  position:absolute;
+  top: 0;
+  right:25%;
+  background-color: blue;
 }
