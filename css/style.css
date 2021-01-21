@@ -92,5 +92,12 @@ img[src*="balloon"] + span{
   color: #E3278B;
 }
 
+.card:nth-child(6) * {
+  visibility: visible;
+  background-image: url('../img/white-background-2.jpg');
+  border-radius: 10px 10px 10px 10px;
+}
+
+
 
 /* mettere background img con after */
