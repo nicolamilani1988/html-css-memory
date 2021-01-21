@@ -2,7 +2,6 @@
 *{
   box-sizing: border-box;
   margin:0;
-  box-sizing: border-box;
   padding:0;
 }
 
@@ -10,16 +9,16 @@ body{
   background-color: #ADD8E6;
 }
 
-h1, footer{
+.text{
   font-family: 'Nerko One', cursive;
   text-align: center;
+  text-shadow: 1px 0px #170202;
 }
 
 /* regole titolo */
 h1{
   color:white;
-  font-size: 50px;
-  text-shadow: 1px 0px #170202;
+  font-size: 100px;
 }
 
 /* regole generali carte */
@@ -64,6 +63,7 @@ background-color:white;
   left: 0;
   font-size: 25px;
   width: 100%;
+  color: #E51A86;
 }
 
 .card img{
@@ -73,6 +73,31 @@ background-color:white;
   left: 0;
   top: 0;
 }
+
+img[src*="Tractor"] + span{
+  color: orange;
+}
+
+img[src*="Submarine"] + span{
+  color: blue;
+}
+
+img[src*="Tram"] + span{
+  color: green;
+}
+
+img[src*="Bicycle"] + span{
+  color:yellow;
+}
+
+img[src*="Cruise"] + span{
+  color: purple;
+}
+
+
+
+
+
 
 /* .card *{
   position: absolute;
