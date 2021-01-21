@@ -32,17 +32,12 @@ main{
 }
 
 .card{
-  background-image: none;
-}
-
-
-.card{
   width: 150px;
   height: 200px;
   background-image: url('../img/pattern.png');
   background-size: contain;
   box-shadow: 2px 1px #86A8B2;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 10px 10px 10px 10px;
   display: inline-block;
   margin: 10px;
   position: relative;
@@ -50,11 +45,13 @@ main{
 
 .card *{
 visibility: hidden;
-background-color:white;
 }
 
 .card:hover * {
   visibility: visible;
+  background-color:white;
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
 }
 
 .card span{
@@ -63,15 +60,12 @@ background-color:white;
   left: 0;
   font-size: 25px;
   width: 100%;
-  color: #E51A86;
+  height: 20%;
 }
 
 .card img{
   width: 100%;
   height: 80%;
-  position:absolute;
-  left: 0;
-  top: 0;
 }
 
 img[src*="Tractor"] + span{
@@ -94,56 +88,9 @@ img[src*="Cruise"] + span{
   color: purple;
 }
 
-
-
-
-
-
-/* .card *{
-  position: absolute;
-  right: 50px;
+img[src*="balloon"] + span{
+  color: #E3278B;
 }
 
-span{
-  /* position: absolute; */
-  /* bottom: 10px;
-  text-align: center;
-} */
 
-/* div img{
-  max-height: 100%;
-  max-width:100%;
-  background-color: white;
-  vertical-align: middle;
-
-/* .card.scoperta{ */
-  /* background-color: white; */
-  /* background-image: url('../img/noun_air_balloon_3134741.png'); */
-  /* background-size: cover; */
-}
-
-/* .row .card:nth-child(3){
-  position:absolute;
-  top: 0;
-  right:25%;
-} */
-
-/* regole carte nascoste */
-
-/* .bottom>.second.card:hover{
-  background-color: white;
-  font-size: 10px;
-  background-image: url('../img/noun_air_balloon_3134741.png');
-} */
-
-/* regola hover */
-/* span{
-  visibility: hidden;
-}
-
-.card:hover span {
-  visibility: visible;
-} */
-
-/* riposizionare non con absolute ma inline:block */
 /* mettere background img con after */
