@@ -21,7 +21,7 @@ h1{
   text-shadow: 1px 0px #170202;
 }
 
-/* regole carte */
+/* regole generali carte */
 .row{
   width: 50%;
   margin:auto;
@@ -42,10 +42,15 @@ h1{
   position:absolute;
   top: 0;
   right:0;
-  background-color: grey;
 }
 
 .row .card:nth-child(2){
+  position:absolute;
+  top: 0;
+  left:25%;
+}
+
+#scoperta{
   position:absolute;
   top: 0;
   left:25%;
@@ -56,5 +61,12 @@ h1{
   position:absolute;
   top: 0;
   right:25%;
-  background-color: blue;
+}
+
+/* regole carte nascoste */
+
+.bottom>.second.card:hover{
+  background-color: white;
+  font-size: 10px;
+  background-image: url('../img/noun_air_balloon_3134741.png');
 }
