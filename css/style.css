@@ -40,6 +40,7 @@ main{
   border-radius: 10px 10px 10px 10px;
   display: inline-block;
   margin: 10px;
+  color: #E3278B;
   /* position: relative; */
 }
 
@@ -48,14 +49,14 @@ visibility: hidden;
 display: block;
 }
 
-.card:hover * {
+.card:hover *, .card:nth-child(6) * {
   visibility: visible;
   background-color:white;
   border-radius: 10px 10px 10px 10px;
   width: 100%;
-  /* background-image: none; */
-
 }
+
+
 
 .card span{
   /* position:absolute; */
@@ -89,16 +90,6 @@ img[src*="Bicycle"] + span.text:hover{
 
 img[src*="Cruise"] + span.text:hover{
   color: purple;
-}
-
-img[src*="balloon"] + span.text:hover{
-  color: #E3278B;
-}
-
-.card:nth-child(6) * {
-  visibility: visible;
-  background-image: url('../img/white-background-2.jpg');
-  border-radius: 10px 10px 10px 10px;
 }
 
 
