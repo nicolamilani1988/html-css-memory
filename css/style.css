@@ -71,27 +71,27 @@ display: block;
   height: 80%;
 }
 
-img[src*="Tractor"] + span{
+img[src*="Tractor"] + span.text:hover{
   color: orange;
 }
 
-img[src*="Submarine"] + span{
+img[src*="Submarine"] + span.text:hover{
   color: blue;
 }
 
-img[src*="Tram"] + span{
+img[src*="Tram"] + span.text:hover{
   color: green;
 }
 
-img[src*="Bicycle"] + span{
+img[src*="Bicycle"] + span.text:hover{
   color:yellow;
 }
 
-img[src*="Cruise"] + span{
+img[src*="Cruise"] + span.text:hover{
   color: purple;
 }
 
-img[src*="balloon"] + span{
+img[src*="balloon"] + span.text:hover{
   color: #E3278B;
 }
 
