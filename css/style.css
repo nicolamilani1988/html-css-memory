@@ -31,6 +31,7 @@ main{
   text-align: center;
 }
 
+/* regole carte versione originale
 .card{
   width: 150px;
   height: 200px;
@@ -41,7 +42,6 @@ main{
   display: inline-block;
   margin: 10px;
   color: #E3278B;
-  /* position: relative; */
 }
 
 .card *{
@@ -56,12 +56,7 @@ display: block;
   width: 100%;
 }
 
-
-
 .card span{
-  /* position:absolute; */
-  /* bottom: 0;
-  left: 0; */
   font-size: 25px;
   width: 100%;
   height: 20%;
@@ -90,8 +85,103 @@ img[src*="Bicycle"] + span.text:hover{
 
 img[src*="Cruise"] + span.text:hover{
   color: purple;
+} */
+
+/* regole carte versione bonus :after :before */
+.card{
+  width: 150px;
+  height: 200px;
+  background-image: url('../img/pattern.png');
+  background-size: contain;
+  box-shadow: 2px 1px #86A8B2;
+  border-radius: 10px 10px 10px 10px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+
+.card:before, .card:after{
+  position: absolute;
+  left:0;
+  right: 0;
+  display: block;
+  background-color: white;
+  visibility: hidden;
+}
+
+.card:before{
+  content:'';
+  bottom: 20%;
+  top:0%;
+  background-size: 100% 100%;
+}
+
+.card:after{
+  height: 20%;
+  top: 80%;
+  bottom: 0%;
+  font-family: 'Nerko One', cursive;
+  font-size: 25px;
+}
+
+.card:hover::before , .card:hover::after {
+  visibility: visible;
+  background-color:white;
+  border-radius: 10px 10px 10px 10px;
+  width: 100%;
+}
+
+.ship:before{
+  background-image: url('../img/noun_Cruise_Ship_3134824.png');
+}
+
+.ship:after{
+  content:'Cruise ship';
+  color: blue;
+}
+
+.balloon:before{
+  background-image: url('../img/noun_air_balloon_3134741.png');
+}
+
+.balloon:after{
+  content:'Air Balloon';
+  color: #E3278B;
+}
+
+.bicycle:before{
+  background-image: url('../img/noun_Bicycle_3134821.png');
+}
+
+.bicycle:after{
+  content:'Bicycle';
+  color: yellow;
+}
+
+.tractor:before{
+  background-image: url('../img/noun_Tractor_3134797.png');
+}
+
+.tractor:after{
+  content:'Tractor';
+  color: orange;
 }
 
 
+.submarine:before{
+  background-image: url('../img/noun_Submarine_3134738.png');
+}
 
-/* mettere background img con after */
+.submarine:after{
+  content:'Submarine';
+  color: lightblue;
+}
+
+.tram:before{
+  background-image: url('../img/noun_Tram_3134750.png');
+}
+
+.tram:after{
+  content:'Tram';
+  color: green;
+}
